@@ -15,6 +15,7 @@ def get_clima(ciudad: str) -> dict:
     Returns:
         dict: Datos del clima devueltos por la API.
     """
+    print("Buscando en caché...")
     api_key = os.getenv("API_KEY")
     base_url = os.getenv("BASE_URL")
     units = os.getenv("UNITS")
